@@ -19,10 +19,12 @@ https://medium.com/@stephengregory_69986/installing-cuda-10-1-on-ubuntu-20-04-e5
     
 ### Download libtorch
 https://pytorch.org/
+
     PyTorch Build: Stable (1.7.1)
     Your OS: Linux
     Package: libtorch
     CUDA: 10.1
+    
 Download here (Pre-cxx11 ABI):     
 https://download.pytorch.org/libtorch/cu101/libtorch-shared-with-deps-1.7.1%2Bcu101.zip
 
