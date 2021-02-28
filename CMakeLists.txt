@@ -5,7 +5,7 @@ project(example)
 #otherwise
 #$ cmake CMakeLists.txt
 set(CMAKE_LIBRARY_PATH "/usr/local/cuda-10.2/targets/x86_64-linux/lib")
-list(APPEND CMAKE_PREFIX_PATH "/home/tiny/olle1/hello1/libtorch")
+list(APPEND CMAKE_PREFIX_PATH "/home/hello1/libtorch")
 set(CMAKE_CXX_STANDARD 14)
 find_package(Torch REQUIRED)
 add_executable(main main.cpp)
