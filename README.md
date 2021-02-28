@@ -68,13 +68,13 @@ examlpe
 #### Do cmake with OPENCV_GENERATE_PKGCONFIG=ON and with WITH_GTK=ON
 Both OPENCV_GENERATE_PKGCONFIG=ON and WITH_GTK=ON need to be turned ON to not get error later.
 
-    /home/opencv-master$ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
-    /home/opencv-master$ sudo make
+    /home/opencv-master/build$ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
+    /home/opencv-master/build$ sudo make
 
 #### Time... for coffe :)
 #### Put files into the system folder with this command:
 
-    /home/opencv-master$ sudo make install
+    /home/opencv-master/build$ sudo make install
     
     
 
