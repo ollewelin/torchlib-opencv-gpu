@@ -39,7 +39,7 @@ https://code.visualstudio.com/docs/setup/linux
 
     $ sudo snap install --classic code
 
-### Install libgtk2.0-dev and pkg-config
+### Install libgtk2.0-dev and pkg-config (Maybee not neccesary)
     $ sudo apt-get install libgtk2.0-dev
     $ sudo apt-get install pkg-config
 
