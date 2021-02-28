@@ -25,8 +25,8 @@ https://pytorch.org/
     Package: libtorch
     CUDA: 10.1
     
-Download here (Pre-cxx11 ABI):     
-https://download.pytorch.org/libtorch/cu101/libtorch-shared-with-deps-1.7.1%2Bcu101.zip
+Download here (cxx11 ABI):      
+https://download.pytorch.org/libtorch/cu101/libtorch-cxx11-abi-shared-with-deps-1.7.1%2Bcu101.zip
 
 #### Make a test directory hello1
     /home/$ mkdir hello1
