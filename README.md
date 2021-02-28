@@ -15,7 +15,7 @@ https://medium.com/@stephengregory_69986/installing-cuda-10-1-on-ubuntu-20-04-e5
 ### Install Visual Studio Code 
 https://code.visualstudio.com/docs/setup/linux
 
-    $ sudo snap install 
+    $ sudo snap install --classic code
 
 ### Step x. Install libgtk2.0-dev and pkg-config
     $ sudo apt-get install libgtk2.0-dev
