@@ -1,12 +1,13 @@
 cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
-project(example)
-#If debug want the command use command 
-#$ cmake -DCMAKE_BUILD_TYPE=Debug .
-#otherwise
-#$ cmake CMakeLists.txt
-set(CMAKE_LIBRARY_PATH "/usr/local/cuda-10.2/targets/x86_64-linux/lib")
-list(APPEND CMAKE_PREFIX_PATH "/home/hello1/libtorch")
+project(main)
 set(CMAKE_CXX_STANDARD 14)
-find_package(Torch REQUIRED)
+set(CMAKE_LIBRARY_PATH "/usr/local/cuda-10.2/targets/x86_64-linux/lib")
+list(APPEND CMAKE_PREFIX_PATH "/home/tiny/olle1/hello4/libtorch")
+set(OpenCV_DIR /home/tiny/olle1/OpenCV/opencv-master/build)
+list(APPEND CMAKE_PREFIX_PATH "/home/tiny/olle1/hello4/libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101/libtorch")
+find_package(Torch REQUIRED)  
+find_package(OpenCV REQUIRED)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lm -ldl")
 add_executable(main main.cpp)
-target_link_libraries(main ${TORCH_LIBRARIES})
+target_link_libraries(main ${TORCH_LIBRARIES} ${OpenCV_LIBS})
+set_property(TARGET main PROPERTY CXX_STANDARD 14)
