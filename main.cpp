@@ -8,8 +8,6 @@
 #include <opencv2/core/core.hpp>        // Basic OpenCV structures (cv::Mat, Scalar)
 
 //using namespace cv;
-void print_tensor_size(const torch::Tensor&);
-void print_script_module(const torch::jit::script::Module& module, size_t spaces = 0);
 
 int main() {
 
