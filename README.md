@@ -4,6 +4,9 @@
 
 
 ### Step x. Make Install OpenCV
+    $ mkdir build
+    $ cd build
+    $ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
     $ sudo make install
     
 ### Step x. Install libgtk2.0-dev and pkg-config
