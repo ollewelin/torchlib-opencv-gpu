@@ -29,9 +29,11 @@ Download here (Pre-cxx11 ABI):
 https://download.pytorch.org/libtorch/cu101/libtorch-shared-with-deps-1.7.1%2Bcu101.zip
 
 #### Make a test directory hello1
-    $ sudo mkdir hello1
-    $ cd /home/tiny/olle1/hello1
-#### Unzip libtorch zipfile in hello1 directort
+    /home$ sudo mkdir tiny
+    /home/tiny$ sudo mkdir olle1
+    /home/tiny/olle1$ sudo mkdir hello1
+    /home/tiny/olle1$ cd /home/tiny/olle1/hello1
+#### Unzip libtorch zipfile in hello1 directory
     $ /home/tiny/olle1/hello1/libtorch/../..
 
 #### Install Visual Studio Code 
@@ -56,23 +58,23 @@ unzip opencv-master.zip
 move to unziped folder directory 
 examlpe
 
-    $ ../../opencv-master
+    $ cd /home/opencv-master
 
 #### Make a build directory
     
-    $ mkdir build
-    $ cd build
+    /home/opencv-master$ mkdir build
+    /home/opencv-master$ cd build
 
 #### Do cmake with OPENCV_GENERATE_PKGCONFIG=ON and with WITH_GTK=ON
 Both OPENCV_GENERATE_PKGCONFIG=ON and WITH_GTK=ON need to be turned ON to not get error later.
 
-    $ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
-    $ sudo make
+    /home/opencv-master$ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
+    /home/opencv-master$ sudo make
 
 #### Time... for coffe :)
 #### Put files into the system folder with this command:
 
-    $ sudo make install
+    /home/opencv-master$ sudo make install
     
     
 
