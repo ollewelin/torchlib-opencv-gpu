@@ -24,8 +24,7 @@ examlpe
     $ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
     $ sudo make
 
-#### Compilening take time.. take a breake and coffe :)
-
+#### Time... for coffe :)
 #### Put files into the system folder with this command:
 
     $ sudo make install
