@@ -24,11 +24,11 @@ https://pytorch.org/
 Download here (Pre-cxx11 ABI):     
 https://download.pytorch.org/libtorch/cu101/libtorch-shared-with-deps-1.7.1%2Bcu101.zip
 
-### Make a test directory
-    $ sudo mkdir hello
-    $ cd hello
-### Unzip libtorch zipfile 
-
+### Make a test directory hello1
+    $ sudo mkdir hello1
+    $ cd /home/tiny/olle1/hello1
+### Unzip libtorch zipfile in hello1 directort
+    $ /home/tiny/olle1/hello1/libtorch/../..
 
 ### Install Visual Studio Code 
 https://code.visualstudio.com/docs/setup/linux
