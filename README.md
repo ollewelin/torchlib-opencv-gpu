@@ -32,11 +32,11 @@ https://download.pytorch.org/libtorch/cu101/libtorch-cxx11-abi-shared-with-deps-
     /home/$ mkdir hello1
     /home/$ cd hello1
 #### Unzip libtorch zipfile in hello1 directory
-    $ /home/tiny/hello1
+    $ /home/hello1
     
-unzip    
+extract zip file result this:    
     
-    $ /home/tiny/hello1/libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101/libtorch
+    $ /home/hello1/libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101/libtorch
 
 #### Install Visual Studio Code 
 https://code.visualstudio.com/docs/setup/linux
