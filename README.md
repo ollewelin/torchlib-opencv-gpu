@@ -29,7 +29,9 @@ https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started
 
 #### Check Nvidia dirver
     $ nvidia-smi
-    
+
+Example answer:
+
     Tue Mar  2 19:19:42 2021       
     +-----------------------------------------------------------------------------+
     | NVIDIA-SMI 460.39       Driver Version: 460.39       CUDA Version: 11.2     |
@@ -54,6 +56,8 @@ https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started
 #### Check CUDA
     $ nvcc --version
 
+Example answer:
+
     nvcc: NVIDIA (R) Cuda compiler driver
     Copyright (c) 2005-2019 NVIDIA Corporation
     Built on Sun_Jul_28_19:07:16_PDT_2019
@@ -62,7 +66,9 @@ https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started
 #### Check cuDNN
 
     $ /sbin/ldconfig -N -v $(sed ‘s/:/ /’ <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
-    
+
+Example answer:
+
     sed: -e expression #1, char 1: unknown command: `�'
 	libcudnn_adv_train.so.8 -> libcudnn_adv_train.so.8.0.4
 	libcudnn_ops_train.so.8 -> libcudnn_ops_train.so.8.0.4
