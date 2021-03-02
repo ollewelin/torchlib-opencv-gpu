@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_LIBRARY_PATH "/usr/local/cuda-10.2/targets/x86_64-linux/lib")
 set(OpenCV_DIR /home/tiny/olle1/OpenCV/opencv-master/build)
 
-#If you want to use debugging mode then shis cmake set command line below
+#If you want to use debugging mode then use this cmake set command line below
 #set(CMAKE_BUILD_TYPE=Debug)
 #or use this cmake directive -DCMAKE_BUILD_TYPE=Debug .
 #cmake -DCMAKE_BUILD_TYPE=Debug .
