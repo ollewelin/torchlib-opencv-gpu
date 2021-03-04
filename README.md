@@ -93,19 +93,12 @@ Download here (cxx11 ABI):
 https://download.pytorch.org/libtorch/cu101/libtorch-cxx11-abi-shared-with-deps-1.7.1%2Bcu101.zip
 
 #### Make a test directory hello1
-    /home/$ mkdir hello1
-    /home/$ cd hello1
+    $ mkdir hello1
+    $ cd hello1
+    /hello1$ wget https://download.pytorch.org/libtorch/cu101/libtorch-cxx11-abi-shared-with-deps-1.7.1%2Bcu101.zip
+    
 #### Unzip libtorch zipfile in hello1 directory
-    $ /home/hello1
-    
-extract zip file result this:    
-    
-    $ /home/hello1/libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101/libtorch
-
-#### Install Visual Studio Code 
-https://code.visualstudio.com/docs/setup/linux
-
-    $ sudo snap install --classic code
+    /hello1$ unzip libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101.zip
 
 ### Install libgtk2.0-dev and pkg-config (Maybee not neccesary)
     $ sudo apt-get install libgtk2.0-dev
@@ -117,30 +110,49 @@ https://code.visualstudio.com/docs/setup/linux
 
 ### Install OpenCV
 
-https://github.com/opencv/opencv
-
-unzip opencv-master.zip
-
-move to unziped folder directory 
-examlpe
-
-    $ cd /home/opencv-master
+	$ wget https://github.com/opencv/opencv
+	$ unzip opencv-master.zip
+	$ cd opencv-master
 
 #### Make a build directory
     
-    /home/opencv-master$ mkdir build
-    /home/opencv-master$ cd build
+    /opencv-master$ mkdir build
+    /opencv-master$ cd build
 
 #### Do cmake with OPENCV_GENERATE_PKGCONFIG=ON and with WITH_GTK=ON
 Both OPENCV_GENERATE_PKGCONFIG=ON and WITH_GTK=ON need to be turned ON to not get error later.
 
-    /home/opencv-master/build$ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
-    /home/opencv-master/build$ sudo make
+    /opencv-master/build$ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
+    /opencv-master/build$ sudo make
 
 #### Time... for coffe :)
 #### Put files into the system folder with this command:
 
-    /home/opencv-master/build$ sudo make install
+    /opencv-master/build$ sudo make install
+    
+### Use Visual Studio Code IDE editor.
+
+#### Install Visual Studio Code 
+https://code.visualstudio.com/docs/setup/linux
+
+    $ sudo snap install --classic code
+    
+#### Download test code, C++ main.cpp and CMakeFiles.txt (this repository).
+
+	CTRL-ALT-T
+	$ cd hello1
+	/hello1$ wget https://github.com/ollewelin/Ubuntu18_04-CUDA-toolkit-cuDNN-TorchLib-cmake-VS_code-OpenCV-for-machine-learning
+	/hello1$ unzip ...
+	
+#### Start Visual Studio Code IDE with test files.
+
+	/hello1@ code .
+
+
+	
+	
+	
+
     
     
 
