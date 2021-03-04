@@ -107,28 +107,31 @@ https://download.pytorch.org/libtorch/cu101/libtorch-cxx11-abi-shared-with-deps-
 ### Install cmake
     $ sudo apt-get update
     $ sudo apt-get install cmake
+    
+### Install git
+	$ sudo apt-get update
+	$ sudo apt-get install git
 
 ### Install OpenCV
 
-	$ wget https://github.com/opencv/opencv
-	$ unzip opencv-master.zip
-	$ cd opencv-master
+	$ sudo git clone https://github.com/opencv/opencv
+	$ cd opencv
 
 #### Make a build directory
     
-    /opencv-master$ mkdir build
-    /opencv-master$ cd build
+    /opencv$ mkdir build
+    /opencv$ cd build
 
 #### Do cmake with OPENCV_GENERATE_PKGCONFIG=ON and with WITH_GTK=ON
 Both OPENCV_GENERATE_PKGCONFIG=ON and WITH_GTK=ON need to be turned ON to not get error later.
 
-    /opencv-master/build$ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
-    /opencv-master/build$ sudo make
+    /opencv/build$ sudo cmake -D OPENCV_GENERATE_PKGCONFIG=ON WITH_GTK=ON ..
+    /opencv/build$ sudo make
 
 #### Time... for coffe :)
 #### Put files into the system folder with this command:
 
-    /opencv-master/build$ sudo make install
+    /opencv/build$ sudo make install
     
 ### Use Visual Studio Code IDE editor.
 
@@ -139,14 +142,12 @@ https://code.visualstudio.com/docs/setup/linux
     
 #### Download test code, C++ main.cpp and CMakeFiles.txt (this repository).
 
-	CTRL-ALT-T
 	$ cd hello1
-	/hello1$ wget https://github.com/ollewelin/Ubuntu18-04-CUDA-toolkit-cuDNN-TorchLib-cmake-VS_code-OpenCV-for-machine-learning
-	/hello1$ unzip ...
+	/hello1$ sudo git clone https://github.com/ollewelin/Ubuntu18-04-CUDA-toolkit-cuDNN-TorchLib-cmake-VS_code-OpenCV-for-machine-learning
 	
 #### Start Visual Studio Code IDE with test files.
 
-	/hello1@ code .
+	/hello1$ code .
 
 
 	
