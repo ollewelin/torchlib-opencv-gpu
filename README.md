@@ -141,7 +141,7 @@ https://code.visualstudio.com/docs/setup/linux
 
 	CTRL-ALT-T
 	$ cd hello1
-	/hello1$ wget https://github.com/ollewelin/Ubuntu18_04-CUDA-toolkit-cuDNN-TorchLib-cmake-VS_code-OpenCV-for-machine-learning
+	/hello1$ wget https://github.com/ollewelin/Ubuntu18-04-CUDA-toolkit-cuDNN-TorchLib-cmake-VS_code-OpenCV-for-machine-learning
 	/hello1$ unzip ...
 	
 #### Start Visual Studio Code IDE with test files.
