@@ -9,6 +9,7 @@ https://medium.com/@stephengregory_69986/installing-cuda-10-1-on-ubuntu-20-04-e5
 Start a terminal
     Ctrl-Alt-T
     
+    $ sudo apt-get update
     $ sudo vim ~/.profile
     
 Edit file and change
