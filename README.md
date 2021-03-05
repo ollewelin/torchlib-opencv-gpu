@@ -163,9 +163,18 @@ https://code.visualstudio.com/docs/setup/linux
 
 ![](include_opencv4_vc.png)
 
+#### Important change CMakeLists.txt path with your working directory path
+	/hello1$ pwd
+reply example 
+
+	/home/tiny/olle1/hello4
+Copy in your path into CMakeLists.txt 
+	
+	
+
 #### Use cmake debug option
 	
-	/hello1/$ cmake -DCMAKE_BUILD_TYPE=Debug .
+	/hello1$ cmake -DCMAKE_BUILD_TYPE=Debug .
 	
 #### Use cmake without debug option	
 	/hello1$ cmake CMakeLists.txt
