@@ -144,7 +144,7 @@ https://code.visualstudio.com/docs/setup/linux
 #### Download test code, C++ main.cpp and CMakeFiles.txt (this repository).
 
 	$ cd hello1
-	/hello1$ git clone https://github.com/ollewelin/Ubuntu18-04-CUDA-toolkit-cuDNN-TorchLib-cmake-VS_code-OpenCV-for-machine-learning
+	/hello1$ git clone https://github.com/ollewelin/torchlib-opencv-gpu
 	
 #### Start Visual Studio Code IDE with test files.
 
