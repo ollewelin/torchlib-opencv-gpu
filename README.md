@@ -152,13 +152,22 @@ https://code.visualstudio.com/docs/setup/linux
 
 #### Include OpenCV path to VS code
 
+	In VS code IDE:
+	Wiev -> Command pallete.. -> C++: Edit Configurations (UI)
+	add to Include path
+	
+	/usr/local/include/opencv4
+
 ![](include_opencv4_vc.png)
 
+#### Use cmake debug option
 	
+	/hello1$ cmake -DCMAKE_BUILD_TYPE=Debug .
 	
+#### Use cmake without debug option	
+	/hello1$ cmake CMakeLists.txt
 	
+#### Compile and run test program
 
-    
-    
-
-
+	/hello1$ make
+	/hello1$ ./main
