@@ -164,12 +164,20 @@ https://code.visualstudio.com/docs/setup/linux
 ![](include_opencv4_vc.png)
 
 #### Important change CMakeLists.txt path with your working directory path
-	/hello1$ pwd
+	/hello1$ cd ..
+	/$ pwd
 reply example 
 
-	/home/tiny/olle1/hello4
-Copy in your path into CMakeLists.txt 
+	/home/tiny/olle1
 	
+Edit your path into CMakeLists.txt file
+Example:
+
+	...
+	set(OpenCV_DIR /home/tiny/olle1/OpenCV/opencv-master/build)
+	...
+	list(APPEND CMAKE_PREFIX_PATH "/home/tiny/olle1/hello1/libtorch")
+	...
 	
 
 #### Use cmake debug option
