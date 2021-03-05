@@ -150,6 +150,9 @@ https://code.visualstudio.com/docs/setup/linux
 
 	/hello1$ code .
 
+#### Include OpenCV path to VS code
+
+![](include_opencv4_vc.png)
 
 	
 	
