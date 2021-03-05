@@ -101,10 +101,6 @@ https://download.pytorch.org/libtorch/cu101/libtorch-cxx11-abi-shared-with-deps-
 #### Unzip libtorch zipfile in hello1 directory
     /hello1$ unzip libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101.zip
 
-### Install libgtk2.0-dev and pkg-config (Maybee not neccesary)
-    $ sudo apt-get install libgtk2.0-dev
-    $ sudo apt-get install pkg-config
-
 ### Install cmake
     $ sudo apt-get update
     $ sudo apt-get install cmake
