@@ -203,5 +203,12 @@ to
 	..
 	"program": "main",
 	..
+save
+Ctrl-S
+
+	Run -> Start debugging 
+	of
+	F5
+	
 	
 ![](debug.png)
