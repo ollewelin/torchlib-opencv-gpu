@@ -141,6 +141,11 @@ https://code.visualstudio.com/docs/setup/linux
 
 	$ cd hello1
 	/hello1$ git clone https://github.com/ollewelin/torchlib-opencv-gpu
+	/hello1$ cd torchlib-opencv-gpu	
+	/hello1/torchlib-opencv-gpu$ mv *.* ../
+	/hello1/torchlib-opencv-gpu$ cd ..
+	/hello1$ sudo rm -r torchlib-opencv-gpu
+	
 	
 #### Start Visual Studio Code IDE with test files.
 
@@ -153,12 +158,14 @@ https://code.visualstudio.com/docs/setup/linux
 	add to Include path
 	
 	/usr/local/include/opencv4
+##### Save settings
+	CTRL-S
 
 ![](include_opencv4_vc.png)
 
 #### Use cmake debug option
 	
-	/hello1$ cmake -DCMAKE_BUILD_TYPE=Debug .
+	/hello1/$ cmake -DCMAKE_BUILD_TYPE=Debug .
 	
 #### Use cmake without debug option	
 	/hello1$ cmake CMakeLists.txt
