@@ -9,7 +9,8 @@ set(OpenCV_DIR /home/tiny/olle1/OpenCV/opencv-master/build)
 #or use this cmake directive -DCMAKE_BUILD_TYPE=Debug .
 #cmake -DCMAKE_BUILD_TYPE=Debug .
 
-list(APPEND CMAKE_PREFIX_PATH "/home/hello1/libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101/libtorch")
+#list(APPEND CMAKE_PREFIX_PATH "/home/hello1/libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101/libtorch")
+list(APPEND CMAKE_PREFIX_PATH "/home/hello1/libtorch")
 find_package(Torch REQUIRED)  
 find_package(OpenCV REQUIRED)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lm -ldl")
