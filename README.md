@@ -191,3 +191,17 @@ Example:
 
 	/hello1$ make
 	/hello1$ ./main
+
+#### Run debug inside VS code
+Edit launch.json file and change
+
+	..
+	"program": "enter program name, for example ${workspaceFolder}/a.out",
+	..
+to 
+
+	..
+	"program": "main",
+	..
+	
+	
