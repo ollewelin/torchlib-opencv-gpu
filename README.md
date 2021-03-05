@@ -5,34 +5,6 @@
 
 https://medium.com/@stephengregory_69986/installing-cuda-10-1-on-ubuntu-20-04-e562a5e724a0#fa83
 
-Condensed commands:
-
-Clean up:
-
-	sudo rm /etc/apt/sources.list.d/cuda*
-	sudo apt remove --autoremove nvidia-cuda-toolkit
-	sudo apt remove --autoremove nvidia-*
-
-	sudo apt-get purge nvidia*
-	sudo apt-get autoremove
-	sudo apt-get autoclean
-
-Update: 
-
-	sudo apt update
-	sudo add-apt-repository ppa:graphics-drivers
-
-	sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
-
-	sudo bash -c 'echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/cuda.list'
-
-	sudo bash -c 'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/cuda_learn.list'
-
-	sudo apt update
-	sudo apt install cuda-10-1
-	sudo apt install libcudnn7
-
-
 #### Modify the ~/.Profile file with extended path 10.1 and 10.2 
 Start a terminal
     Ctrl-Alt-T
