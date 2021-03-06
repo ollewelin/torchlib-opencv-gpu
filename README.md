@@ -95,6 +95,10 @@ Example answer:
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
 #### Download cuDNN from NVIDIA Archive 
+To get rid of cmake error issue:
+..
+Could NOT find CUDNN (missing: CUDNN_LIBRARY_PATH CUDNN_INCLUDE_PATH)
+..
 
 https://developer.nvidia.com/rdp/cudnn-archive
 Make an account
