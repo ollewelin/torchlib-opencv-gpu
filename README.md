@@ -36,6 +36,7 @@ Start a terminal
     Ctrl-Alt-T
     
     $ sudo apt-get update
+    $ sudo apt-get install vim
     $ sudo vim ~/.profile
     
 Edit file and change
