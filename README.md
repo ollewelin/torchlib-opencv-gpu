@@ -2,10 +2,13 @@
 ![](test_debug.png)
 
 ### Youtube video serie 1,2,3
+
 Part 1 video:
 https://youtu.be/Ov5vyJR55iQ
+
 Part 2 video:
 https://youtu.be/D7WRwYmIUfE
+
 Part 3 video:
 https://youtu.be/HvolUKvMrxI
 
