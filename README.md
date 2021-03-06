@@ -1,6 +1,14 @@
 # Installing Ubuntu18.04, CUDA toolkit 10.1, cuDNN, Torchlib C++, cmake, VS code and OpenCV for machine learning.
 ![](test_debug.png)
 
+### Youtube video serie 1,2,3
+Part 1 video:
+https://youtu.be/Ov5vyJR55iQ
+Part 2 video:
+https://youtu.be/D7WRwYmIUfE
+Part 3 video:
+https://youtu.be/HvolUKvMrxI
+
 ### Install CUDA toolkit and cuDNN
 
 https://medium.com/@stephengregory_69986/installing-cuda-10-1-on-ubuntu-20-04-e562a5e724a0#fa83
