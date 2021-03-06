@@ -91,6 +91,29 @@ Example answer:
     Built on Sun_Jul_28_19:07:16_PDT_2019
     Cuda compilation tools, release 10.1, V10.1.243
     
+#### 2.3.2. Debian Installation
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
+
+#### Download cuDNN from NVIDIA Archive 
+
+https://developer.nvidia.com/rdp/cudnn-archive
+Make an account
+and download
+
+I was select from
+
+Download cuDNN v8.0.4 (September 28th, 2020), for CUDA 10.1
+
+	cuDNN Runtime Library for Ubuntu18.04 (Deb)
+	cuDNN Developer Library for Ubuntu18.04 (Deb)
+	cuDNN Code Samples and User Guide for Ubuntu18.04 (Deb)
+
+Then Install the runtime library, for example:
+
+	~/Downloads$ sudo dpkg -i libcudnn8_8.0.4.30-1+cuda10.1_amd64.deb
+	~/Downloads$ sudo dpkg -i libcudnn8-dev_8.0.4.30-1+cuda10.1_amd64.deb
+	~/Downloads$ sudo dpkg -i libcudnn8-samples_8.0.4.30-1+cuda10.1_amd64.deb
+
 #### Check cuDNN
 
     $ /sbin/ldconfig -N -v $(sed ‘s/:/ /’ <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
