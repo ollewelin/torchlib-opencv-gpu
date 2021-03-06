@@ -286,7 +286,7 @@ Example:
 	/hello1$ ./main
 	
 	
-### Install libgtk2.0-dev and pkg-config if issues with 
+### Install libgtk2.0-dev and pkg-config if issues with libgtk2.0-dev and pkg-config
     
     $ sudo apt-get install libgtk2.0-dev
     $ sudo apt-get install pkg-config
