@@ -164,6 +164,12 @@ https://download.pytorch.org/libtorch/cu101/libtorch-cxx11-abi-shared-with-deps-
 	$ git clone https://github.com/opencv/opencv
 	$ cd opencv
 
+#### Install libgtk2.0-dev and pkg-config if issues with libgtk2.0-dev and pkg-config
+    
+    $ sudo apt-get install libgtk2.0-dev
+    $ sudo apt-get install pkg-config
+
+
 #### Make a build directory
     
     /opencv$ mkdir build
@@ -285,12 +291,6 @@ Example:
 	/hello1$ make
 	/hello1$ ./main
 	
-	
-### Install libgtk2.0-dev and pkg-config if issues with libgtk2.0-dev and pkg-config
-    
-    $ sudo apt-get install libgtk2.0-dev
-    $ sudo apt-get install pkg-config
-
 
 #### Run debug inside VS code
 Edit launch.json file and change
