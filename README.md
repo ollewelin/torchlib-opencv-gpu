@@ -214,6 +214,49 @@ Example:
 #### Use cmake without debug option	
 	/hello1$ cmake CMakeLists.txt
 	
+#### Example how it looks on my other partition
+`
+tiny@tiny-TUF-Gaming-FX505DT-FX505DT:~/olle1/hello5$ cmake CMakeLists.txt
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda-10.1 (found version "10.1") 
+-- Caffe2: CUDA detected: 10.1
+-- Caffe2: CUDA nvcc is: /usr/local/cuda-10.1/bin/nvcc
+-- Caffe2: CUDA toolkit directory: /usr/local/cuda-10.1
+-- Caffe2: Header version is: 10.1
+-- Found CUDNN: /usr/lib/x86_64-linux-gnu/libcudnn.so  
+-- Found cuDNN: v8.0.4  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libcudnn.so)
+-- Autodetected CUDA architecture(s):  7.5
+-- Added CUDA NVCC flags for: -gencode;arch=compute_75,code=sm_75
+-- Found Torch: /home/tiny/olle1/hello5/libtorch-cxx11-abi-shared-with-deps-1.7.1+cu101/libtorch/lib/libtorch.so  
+-- Found OpenCV: /home/tiny/olle1/OpenCV/opencv-master/build (found version "4.5.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tiny/olle1/hello5
+tiny@tiny-TUF-Gaming-FX505DT-FX505DT:~/olle1/hello5$ 
+`
+	
 #### Compile and run test program
 
 	/hello1$ make
