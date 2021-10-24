@@ -42,7 +42,7 @@ https://medium.com/@stephengregory_69986/installing-cuda-10-1-on-ubuntu-20-04-e5
 	sudo apt install cuda-10-1
 	sudo apt install libcudnn7
 	
-#### OR last command testing 2021-10-19
+#### Or last command testing 2021-10-19, versions CUDA 10.2 and cuDNN 8
 
 	sudo apt install cuda-10-2
 	sudo apt install libcudnn8
