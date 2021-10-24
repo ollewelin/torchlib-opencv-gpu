@@ -41,6 +41,12 @@ https://medium.com/@stephengregory_69986/installing-cuda-10-1-on-ubuntu-20-04-e5
 	sudo apt update
 	sudo apt install cuda-10-1
 	sudo apt install libcudnn7
+	
+OR last command testing 2021-10-19
+
+	sudo apt install cuda-10-2
+	sudo apt install libcudnn8
+
 
 #### Modify the ~/.Profile file with extended path 10.1 and 10.2 
 Start a terminal
