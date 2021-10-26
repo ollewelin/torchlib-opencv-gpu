@@ -175,7 +175,17 @@ Example answer:
 	libcudnn.so.7 -> libcudnn.so.7.6.5
 	libcudnn.so.8 -> libcudnn.so.8.0.4
     
-    
+Or
+	sed: -e expression #1, char 1: unknown command: `�'
+	libcudnn_ops_train.so.8 -> libcudnn_ops_train.so.8.2.4
+	libcudnn_cnn_infer.so.8 -> libcudnn_cnn_infer.so.8.2.4
+	libcudnn.so.7 -> libcudnn.so.7.6.5
+	libcudnn_ops_infer.so.8 -> libcudnn_ops_infer.so.8.2.4
+	libcudnn_adv_train.so.8 -> libcudnn_adv_train.so.8.2.4
+	libcudnn_cnn_train.so.8 -> libcudnn_cnn_train.so.8.2.4
+	libcudnn.so.8 -> libcudnn.so.8.2.4
+	libcudnn_adv_infer.so.8 -> libcudnn_adv_infer.so.8.2.4
+
     
 ### Download libtorch
 https://pytorch.org/
