@@ -67,6 +67,14 @@ https://coderwall.com/p/adv71w/basic-vim-commands-for-getting-started
         export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
     fi
 
+#### Or last command testing 2021-10-19, versions CUDA 10.2 and cuDNN 8
+	
+	# set PATH for cuda 10.2 installation
+		if [ -d "/usr/local/cuda-10.2/bin/" ]; then
+    		export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+    		export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+	fi
+
 #### reboot
     $ sudo reboot
     
@@ -107,7 +115,15 @@ Example answer:
     Copyright (c) 2005-2019 NVIDIA Corporation
     Built on Sun_Jul_28_19:07:16_PDT_2019
     Cuda compilation tools, release 10.1, V10.1.243
-    
+
+#### Or last command testing 2021-10-19, versions CUDA 10.2 and cuDNN 8
+
+	nvcc: NVIDIA (R) Cuda compiler driver
+	Copyright (c) 2005-2019 NVIDIA Corporation
+	Built on Wed_Oct_23_19:24:38_PDT_2019
+	Cuda compilation tools, release 10.2, V10.2.89
+
+
 #### 2.3.2. Debian Installation
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
