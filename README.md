@@ -151,6 +151,14 @@ Then Install the runtime library, for example:
 	~/Downloads$ sudo dpkg -i libcudnn8-dev_8.0.4.30-1+cuda10.1_amd64.deb
 	~/Downloads$ sudo dpkg -i libcudnn8-samples_8.0.4.30-1+cuda10.1_amd64.deb
 
+#### Or last command testing 2021-10-19, versions CUDA 10.2 and cuDNN 8
+Download cuDNN v8.2.4 , for CUDA 10.2
+
+	$ sudo dpkg -i libcudnn8_8.2.4.15-1+cuda10.2_amd64.deb
+	$ sudo dpkg -i libcudnn8-dev_8.2.4.15-1+cuda10.2_amd64.deb
+	$ sudo dpkg -i libcudnn8-samples_8.2.4.15-1+cuda10.2_amd64.deb
+
+
 #### Check cuDNN
 
     $ /sbin/ldconfig -N -v $(sed ‘s/:/ /’ <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
