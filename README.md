@@ -409,9 +409,9 @@ olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ cmake CMakeLists.txt
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/olle/pytorch_cpp
-olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ make
-Consolidate compiler generated dependencies of target main
-[100%] Built target main
+olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ 
+
+
 olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ make
 [ 50%] Building CXX object CMakeFiles/main.dir/main.cpp.o
 [100%] Linking CXX executable main
