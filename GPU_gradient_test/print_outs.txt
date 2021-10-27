@@ -1,0 +1,71 @@
+olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ ./main
+ 0  0  0  0  0
+ 0  0  0  0  0
+[ CPUFloatType{2,5} ]
+ 0
+ 0
+ 0
+ 0
+ 0
+[ CPUFloatType{5} ]
+  0  16   0   0   0
+  0   0   0   0   0
+[ CPUFloatType{2,5} ]
+CUDA is available! 
+ 0.3520  0.8063  0.9258
+ 0.6649  0.0648  0.6388
+ 0.4700  0.1183  0.1226
+ 0.6432  0.7429  0.3493
+ 0.2579  0.8756  0.0176
+[ CUDAFloatType{5,3} ]
+ 0.3520  0.8063  0.9258  0.6649  0.0648
+ 0.6388  0.4700  0.1183  0.1226  0.6432
+ 0.7429  0.3493  0.2579  0.8756  0.0176
+[ CUDAFloatType{3,5} ]
+ 17.3000   0.8063   0.9258   0.6649   0.0648
+  0.6388   0.4700   0.1183   0.1226   0.6432
+  0.7429   0.3493   0.2579   0.8756   0.0176
+[ CUDAFloatType{3,5} ]
+ 0  0  0
+ 0  0  0
+[ CPUFloatType{2,3} ]
+  0  16   0   0   0
+  0   0   0   0   0
+[ CUDAFloatType{2,5} ]
+More basic tests
+ 3
+ 2
+[ CUDALongType{2} ]
+************* GPU t5 tensor **************
+ 11  12  13
+ 14  15  16
+[ CUDAFloatType{2,3} ]
+************* Reshape t5 tensor code  t5.reshape({3,2}) no change **************
+ 11  12  13
+ 14  15  16
+[ CUDAFloatType{2,3} ]
+************* Reshape t5 = t5.reshape({3,2})  t5 tensor **************
+ 11  12
+ 13  14
+ 15  16
+[ CUDAFloatType{3,2} ]
+
+Make CPU tensor forward calculation 
+c1_cpu = a1_cpu * b1_cpu = 15.9779
+[ CPUFloatType{} ]
+Make CPU tensor gradient calculation 
+a1_cpu gradient = 2.8532
+[ CPUFloatType{} ]
+NOTE! b1_cpu gradient is disabled 
+b1_cpu gradient = [ Tensor (undefined) ]
+PyTorch Basics
+
+Make GPU tensor forward calculation 
+c1_gpu = a1_gpu * b1_gpu = 15.98
+[ CUDAFloatType{} ]
+Make GPU tensor gradient calculation 
+a1_gpu gradient = 2.853
+[ CUDAFloatType{} ]
+b1_gpu gradient = 5.6
+[ CUDAFloatType{} ]
+olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ 
