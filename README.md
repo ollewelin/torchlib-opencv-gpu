@@ -368,3 +368,123 @@ Ctrl-S
 	
 	
 ![](debug.png)
+
+#### CUDA 10.2 cmake and make with main.cpp from GPU_gradient_test 2021-10-27
+
+	'
+	olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ cmake CMakeLists.txt
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda-10.2 (found version "10.2") 
+-- Caffe2: CUDA detected: 10.2
+-- Caffe2: CUDA nvcc is: /usr/local/cuda-10.2/bin/nvcc
+-- Caffe2: CUDA toolkit directory: /usr/local/cuda-10.2
+-- Caffe2: Header version is: 10.2
+-- Found CUDNN: /usr/lib/x86_64-linux-gnu/libcudnn.so  
+-- Found cuDNN: v8.2.4  (include: /usr/include, library: /usr/lib/x86_64-linux-gnu/libcudnn.so)
+-- /usr/local/cuda-10.2/lib64/libnvrtc.so shorthash is 08c4863f
+-- Autodetected CUDA architecture(s):  7.5
+-- Added CUDA NVCC flags for: -gencode;arch=compute_75,code=sm_75
+-- Found Torch: /home/olle/pytorch_cpp/libtorch/lib/libtorch.so  
+-- Found OpenCV: /usr/local (found version "4.5.2") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/olle/pytorch_cpp
+olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ make
+Consolidate compiler generated dependencies of target main
+[100%] Built target main
+olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ make
+[ 50%] Building CXX object CMakeFiles/main.dir/main.cpp.o
+[100%] Linking CXX executable main
+[100%] Built target main
+olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ ./main
+ 0  0  0  0  0
+ 0  0  0  0  0
+[ CPUFloatType{2,5} ]
+ 0
+ 0
+ 0
+ 0
+ 0
+[ CPUFloatType{5} ]
+  0  16   0   0   0
+  0   0   0   0   0
+[ CPUFloatType{2,5} ]
+CUDA is available! 
+ 0.8615  0.8352  0.5833
+ 0.9185  0.5853  0.7216
+ 0.8694  0.3485  0.6050
+ 0.9271  0.6108  0.3470
+ 0.0329  0.1904  0.3169
+[ CUDAFloatType{5,3} ]
+ 0.8615  0.8352  0.5833  0.9185  0.5853
+ 0.7216  0.8694  0.3485  0.6050  0.9271
+ 0.6108  0.3470  0.0329  0.1904  0.3169
+[ CUDAFloatType{3,5} ]
+ 17.3000   0.8352   0.5833   0.9185   0.5853
+  0.7216   0.8694   0.3485   0.6050   0.9271
+  0.6108   0.3470   0.0329   0.1904   0.3169
+[ CUDAFloatType{3,5} ]
+ 0  0  0
+ 0  0  0
+[ CPUFloatType{2,3} ]
+  0  16   0   0   0
+  0   0   0   0   0
+[ CUDAFloatType{2,5} ]
+More basic tests
+ 3
+ 2
+[ CUDALongType{2} ]
+************* GPU t5 tensor **************
+ 11  12  13
+ 14  15  16
+[ CUDAFloatType{2,3} ]
+************* Reshape t5 tensor code  t5.reshape({3,2}) no change **************
+ 11  12  13
+ 14  15  16
+[ CUDAFloatType{2,3} ]
+************* Reshape t5 = t5.reshape({3,2})  t5 tensor **************
+ 11  12
+ 13  14
+ 15  16
+[ CUDAFloatType{3,2} ]
+
+Make CPU tensor forward calculation 
+c1_cpu = a1_cpu * b1_cpu = 15.9779
+[ CPUFloatType{} ]
+Make CPU tensor gradient calculation 
+a1_cpu gradient = 2.8532
+[ CPUFloatType{} ]
+NOTE! b1_cpu gradient is disabled 
+b1_cpu gradient = [ Tensor (undefined) ]
+PyTorch Basics
+
+Make GPU tensor forward calculation 
+c1_gpu = a1_gpu * b1_gpu = 15.98
+[ CUDAFloatType{} ]
+Make GPU tensor gradient calculation 
+a1_gpu gradient = 2.853
+[ CUDAFloatType{} ]
+b1_gpu gradient = 5.6
+[ CUDAFloatType{} ]
+olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ 
+'
