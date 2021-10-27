@@ -371,7 +371,7 @@ Ctrl-S
 
 #### CUDA 10.2 cmake and make with main.cpp from GPU_gradient_test 2021-10-27
 
-	'
+`
 	olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ cmake CMakeLists.txt
 -- The C compiler identification is GNU 7.5.0
 -- The CXX compiler identification is GNU 7.5.0
@@ -487,4 +487,4 @@ a1_gpu gradient = 2.853
 b1_gpu gradient = 5.6
 [ CUDAFloatType{} ]
 olle@olle-TUF-Gaming-FX505DT-FX505DT:~/pytorch_cpp$ 
-'
+`
