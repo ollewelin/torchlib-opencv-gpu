@@ -431,6 +431,8 @@ Then click Add configuration
 
 ![](add_conf_launch_json_step2.jpeg)
 
+Change launch.json file "program"
+
 ```
 ....
             "program": "main",
