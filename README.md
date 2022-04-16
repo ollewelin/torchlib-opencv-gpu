@@ -378,8 +378,14 @@ If the launch.json only contain this:
     ]
 }
 ```
-Then add configuration
+Then click Add configuration 
 
+
+![](add_conf_launch_json.jpeg)
+![](add_conf_launch_json_step2.jpeg)
+![](add_conf_launch_json_step3.jpeg)
+
+Then debug view look like this:
 
 ![](debug.png)
 
