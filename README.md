@@ -366,7 +366,21 @@ Ctrl-S
 	of
 	F5
 	
-	
+If the launch.json only contain this:
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+    ]
+}
+```
+Then add configuration
+
+
 ![](debug.png)
 
 #### CUDA 10.2 cmake and make with main.cpp from GPU_gradient_test 2021-10-27
